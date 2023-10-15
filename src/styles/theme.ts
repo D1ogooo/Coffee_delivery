@@ -12,5 +12,6 @@ export const Theme = {
   base_label: '#8D8686',
   base_button: '#E6E5E5',
   base_white: '#FFF',
+  base_card: '#F3F2F2',
  }
 }

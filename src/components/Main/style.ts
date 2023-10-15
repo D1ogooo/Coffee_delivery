@@ -6,8 +6,7 @@ export const Main = styled.main`
 
 export const Pai = styled.div`
  display: flex;
- align-items: center;
- justify-content: center;
+ justify-content: space-between;
  gap: 3.5rem;
 `
 

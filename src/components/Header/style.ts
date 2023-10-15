@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Logo = styled.div``
 export const Container = styled.div`
- width: 90%;
+ width: 80%;
  margin: 0 auto;
  margin-top: 2rem;
  display: flex;
@@ -53,7 +53,6 @@ export const Cart = styled.div`
  gap: 0.25rem;
  background-color: ${({ theme }) => theme.colors.brand_yellow_light};
  cursor: pointer;
- 
 `
 
 export const QuantityCard = styled.span`

@@ -12,7 +12,6 @@ function Header () {
      <GPSContainer><img src={GPSIcon}/><p>Porto Alegre, RS</p></GPSContainer>
      <Cart>
       <img src={CartIcon}/>
-    
       <QuantityCard>1</QuantityCard>
      </Cart> 
     </LeftContainer>

@@ -53,5 +53,21 @@ export const Cart = styled.div`
  gap: 0.25rem;
  background-color: ${({ theme }) => theme.colors.brand_yellow_light};
  cursor: pointer;
+ 
 `
 
+export const QuantityCard = styled.span`
+ background-color: ${({ theme }) => theme.colors.brand_purple};
+ width: 18px;
+ height: 18px;
+ border-radius: 20px;
+ text-align: center;
+ padding: 3px;
+ font-family: 'Roboto';
+ font-size: 11px;
+ font-weight: 600;
+ color: ${({ theme }) => theme.colors.base_white};
+ position: absolute;
+ margin-top: -30px;
+ margin-right: -30px;
+`

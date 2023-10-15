@@ -1,4 +1,4 @@
-import { Container, Logo, GPSContainer, LeftContainer, Cart } from './style'
+import { Container, Logo, GPSContainer, LeftContainer, Cart, QuantityCard } from './style'
 import LogoCoffee from '../../assets/Café logo.svg'
 import GPSIcon from '../../assets/icone de gps.svg'
 import CartIcon from '../../assets/Carrinho amarelo.svg'
@@ -12,7 +12,9 @@ function Header () {
      <GPSContainer><img src={GPSIcon}/><p>Porto Alegre, RS</p></GPSContainer>
      <Cart>
       <img src={CartIcon}/>
-     </Cart>
+    
+      <QuantityCard>1</QuantityCard>
+     </Cart> 
     </LeftContainer>
    </Container>
   </>

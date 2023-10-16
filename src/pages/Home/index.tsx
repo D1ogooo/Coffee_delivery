@@ -5,21 +5,12 @@ import { TitleCoffee } from './style'
 import { Main } from '../../components/Main'
 import { CardsInfo } from './data'
 import CartImage from '../../assets/Carrinho branco.svg'
-import DrementImage from '../../assets/decrementar.svg'
+import DecrementImage from '../../assets/decrementar.svg'
 import AdicionarImage from '../../assets/adicionar.svg'
 
 function Home(){
  const [value, setValue] = useState(0)
  const [quantity, setQuantiti] = useState(0)
- 
- let handleAddValue = () => {
-  
- }
-
-
- let handleDecrementValue = () => {
-  
- }
 
  return (
  <>
@@ -35,11 +26,11 @@ function Home(){
         <TitleCard>{card.titulo}</TitleCard>
         <Paragraph>{card.explicacao}</Paragraph>
         <Contador>
-          <Valor>
-            <span>R$ {card.preco + card.preco}</span>
+         <Valor>
+          <span>R$ {card.preco + card.preco}</span>
           </Valor>
-          <Quantiti>
-            <button id='decrement'><img src={DrementImage} alt="Decrementar" onClick={}/></button>
+           <Quantiti>
+            <button id='decrement'><img src={DecrementImage} alt="Decrementar" onClick={() => setValue(value-1)}/></button>
             <p>{value}</p>
             <button id='increment'><img src={AdicionarImage} alt="Incrementar" onClick={() => setValue(value+1)}/></button>
           </Quantiti>

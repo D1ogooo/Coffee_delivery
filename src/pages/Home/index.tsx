@@ -43,7 +43,7 @@ function Home(){
          <span>R$ {card.preco + card.preco}</span>
           </Valor>
           <Quantiti>
-           <button id='decrement'><img src={DecrementImage} alt="Decrementar" onClick={() => decrement(card.id)}/></button>
+           <button id='decrement'onClick={() => decrement(card.id)><img src={DecrementImage} alt="Decrementar"}/></button>
            <p>{quantities[card.id]}</p>
            <button id='increment'><img src={AdicionarImage} alt="Incrementar" onClick={() => increment(card.id)}/></button>
           </Quantiti>

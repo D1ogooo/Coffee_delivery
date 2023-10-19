@@ -10,7 +10,20 @@ import AdicionarImage from '../../assets/adicionar.svg'
 
 function Home(){
  const [value, setValue] = useState(0)
- const [quantity, setQuantiti] = useState(0)
+ const initial = CardsInfo.map(() => 0)
+ const [quantities, setQuantities] = useState(initial);
+ 
+ const decrement = (product_id: number) => {
+  const newPrice = [...quantities]
+  newPrice[product_id] -= 1
+  setQuantities(newPrice)
+ }
+ 
+ const increment = (product_id: number) => {
+  const newPrice = [...quantities]
+  newPrice[product_id] += 1
+  setQuantities(newPrice)
+ }
 
  return (
  <>
@@ -26,13 +39,13 @@ function Home(){
         <TitleCard>{card.titulo}</TitleCard>
         <Paragraph>{card.explicacao}</Paragraph>
         <Contador>
-         <Valor>
-          <span>R$ {card.preco + card.preco}</span>
+        <Valor>
+         <span>R$ {card.preco + card.preco}</span>
           </Valor>
-           <Quantiti>
-            <button id='decrement'><img src={DecrementImage} alt="Decrementar" onClick={() => setValue(value-1)}/></button>
-            <p>{value}</p>
-            <button id='increment'><img src={AdicionarImage} alt="Incrementar" onClick={() => setValue(value+1)}/></button>
+          <Quantiti>
+           <button id='decrement'><img src={DecrementImage} alt="Decrementar" onClick={() => decrement(card.id)}/></button>
+           <p>{quantities[card.id]}</p>
+           <button id='increment'><img src={AdicionarImage} alt="Incrementar" onClick={() => increment(card.id)}/></button>
           </Quantiti>
           <AddCard>
          <img src={CartImage} alt="Adicionar ao carrinho" />

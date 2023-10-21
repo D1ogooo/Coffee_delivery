@@ -1,8 +1,8 @@
 function Cart() {
   return (
-   <>
-   <h1>Hello, this is the card</h1>
-   </>
+    <>
+    <h1> This is card page</h1>
+    </>
   )
 }
 

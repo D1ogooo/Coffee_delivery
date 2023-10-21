@@ -140,26 +140,32 @@ export const Contador = styled.div`
 `
 
 export const AddCard = styled.button`
- border: none;
  display: flex;
- padding: 0.5rem;
  justify-content: center;
  align-items: center;
- gap: 0.5rem;
- 
+ border: none;
+ cursor: pointer;
+ border-radius: 0.375rem;
+ background: ${({ theme }) => theme.colors.brand_purple_dark};
+ margin-top: 2.5rem;
+ margin-left: 0.5rem;
+ width: 2.375rem;
+ height: 2.375rem;
+ padding-top: 1.875rem;
+
  img {
-  width: 22px;
-  height: 22px;
+  width: 1.375rem;
+  height: 1.375rem;
  }
 `
 
 export const Quantiti = styled.div` 
  display: flex;
  align-items: center;
- margin-top: 40.5px;
- border-radius: 6px;
+ margin-top: 2.53125rem;
+ border-radius: 0.375rem;
  background-color: ${({ theme }) => theme.colors.base_button};
- gap: 8px;
+ gap: 0.5rem;
  padding-left: 10px;
  padding-right: 10px;
 

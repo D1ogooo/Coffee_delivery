@@ -40,14 +40,14 @@ function Home(){
         <Contador>
         <Valor>
          <span>R$ <Third>{card.preco}</Third></span>
-          </Valor>
-          <Quantiti>
-           <button id='decrement' onClick={() => decrement(card.id)}><img src={DecrementImage} alt="Decrementar"/></button>
-           <p>{quantities[card.id]}</p>
-           <button id='increment' onClick={() => increment(card.id)}><img src={AdicionarImage} alt="Incrementar"/></button>
-          </Quantiti>
-          <AddCard>
-         <img src={CartImage} alt="Adicionar ao carrinho" />
+         </Valor>
+         <Quantiti>
+          <button id='decrement' onClick={() => decrement(card.id)}><img src={DecrementImage} alt="Decrementar"/></button>
+          <p>{quantities[card.id]}</p>
+          <button id='increment' onClick={() => increment(card.id)}><img src={AdicionarImage} alt="Incrementar"/></button>
+         </Quantiti>
+        <AddCard>
+         <img src={CartImage} alt="Adicionar ao carrinho"/>
         </AddCard>
        </Contador>
       </Card>

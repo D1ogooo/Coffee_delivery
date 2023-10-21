@@ -61,6 +61,7 @@ export const Valor = styled.p`
  font-style: normal;
  font-weight: 800;
  line-height: 130%;
+ margin-right: 24px;
 
  span {
   color: ${({ theme }) => theme.colors.base_text};
@@ -96,15 +97,40 @@ export const Card = styled.div`
 export const FirstParagraph = styled.p`
  color: ${({ theme }) => theme.colors.yellow_dark};
  margin: 0 auto;
- font-family: Roboto;
+ font-family: 'Roboto';
  font-size: 11px;
  font-style: normal;
  font-weight: 700;
  line-height: 130%;
  text-transform: uppercase;
  border-radius: 100px;
+ width: 200px;
+`
+
+export const First = styled.span`
  background-color: ${({ theme }) => theme.colors.brand_yellow_light};
- width: 65px;
+ color: ${({ theme }) => theme.colors.yellow_dark};
+ font-family: 'Roboto';
+ font-size: 10px;
+ font-style: normal;
+ font-weight: 700;
+ line-height: 130%;
+ text-transform: uppercase;
+`
+
+export const Second = styled.span`
+ background-color: ${({ theme }) => theme.colors.brand_yellow_light};
+ color: ${({ theme }) => theme.colors.yellow_dark};
+ font-family: 'Roboto';
+ font-size: 10px;
+ font-style: normal;
+ font-weight: 700;
+ line-height: 130%;
+ text-transform: uppercase;
+`
+
+export const Third = styled.span`
+ 
 `
 
 export const Contador = styled.div`
@@ -120,6 +146,7 @@ export const AddCard = styled.button`
  justify-content: center;
  align-items: center;
  gap: 0.5rem;
+ 
  img {
   width: 22px;
   height: 22px;
@@ -130,27 +157,40 @@ export const Quantiti = styled.div`
  display: flex;
  align-items: center;
  margin-top: 40.5px;
+ border-radius: 6px;
+ background-color: ${({ theme }) => theme.colors.base_button};
+ gap: 8px;
+ padding-left: 10px;
+ padding-right: 10px;
+
+ p {
+  width: 20px;
+  text-align: center;
+  color: ${({ theme }) => theme.colors.base_title};
+  font-family: 'Roboto';
+ }
 
  #decrement {
+  background-color: ${({ theme }) => theme.colors.base_button};
   cursor: pointer;
   border: none;
   display: flex;
   height: 38px;
-  padding: 0.5rem;
+  padding-top: 28px;
+ 
   justify-content: center;
   align-items: center;
-  gap: 4px;
  }
 
  #increment {
+  background-color: ${({ theme }) => theme.colors.base_button};
   cursor: pointer;
   border: none;
   display: flex;
   height: 38px;
-  padding: 0.5rem;
+  padding-top: 28px;
   justify-content: center;
   align-items: center;
-  gap: 4px;
  }
 
  img {

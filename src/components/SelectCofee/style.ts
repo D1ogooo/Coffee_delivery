@@ -78,7 +78,6 @@ export const Container = styled.div`
  }
 `
 
-
 export const TitleCard = styled.h2`
  color: ${({ theme }) => theme.colors.base_subtitle};
  font-family: 'Roboto';

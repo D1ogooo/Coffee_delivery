@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { Container } from '../Home/style'
-import { Theme } from '../../styles/theme'
 
 export const Title = styled.h1`
  margin-top: -50px;

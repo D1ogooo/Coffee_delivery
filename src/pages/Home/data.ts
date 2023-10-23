@@ -13,7 +13,7 @@ import ArabeImage from '../../assets/árabe.svg'
 
 interface CardsSection {
  id: number,
- preco: number,
+ preco: string,
  image: string,
  tipo: string,
  titulo: string,
@@ -24,7 +24,7 @@ interface CardsSection {
 export const CardsInfo:CardsSection[] = [
  {
    id: 1,
-   preco: 9.90,
+   preco: '9.90',
    image: `${ExpressImage}`,
    tipo: 'Tradicional',
    titulo: 'Expresso Tradicional',
@@ -32,7 +32,7 @@ export const CardsInfo:CardsSection[] = [
  },
  {
    id: 2,
-   preco: 9.90,
+   preco: '9.90',
    image: `${AmericanoImage}`,
    tipo: 'Tradicional',
    titulo: 'Expresso Americano',
@@ -40,7 +40,7 @@ export const CardsInfo:CardsSection[] = [
  },
  {
    id: 3,
-   preco: 9.90,
+   preco: '9.90',
    image: `${CremosoImage}`,
    tipo: 'Tradicional',
    titulo: 'Expresso Cremoso',
@@ -48,7 +48,7 @@ export const CardsInfo:CardsSection[] = [
  },
  {
    id: 4,
-   preco: 9.90,
+   preco: '9.90',
    image: `${GeladoImage}`,
    tipo: 'Trandicional'+'\nGelado',
    titulo: 'Expresso Gelado',
@@ -56,7 +56,7 @@ export const CardsInfo:CardsSection[] = [
  },
  {
    id: 5,
-   preco: 9.90,
+   preco: '9.90',
    image: `${CafeComleiteImage}`,
    tipo: 'Tradicional',
    segundoTipo: 'com leite',
@@ -65,7 +65,7 @@ export const CardsInfo:CardsSection[] = [
  },
 //  {
 //    id: 6,
-//    preco: 9.90,
+//    preco: '9.90',
 //    image: `${}`,
 //    tipo: '',
 //    titulo: '',
@@ -73,7 +73,7 @@ export const CardsInfo:CardsSection[] = [
 //  },
 //  {
 //    id: 7,
-//    preco: 9.90,
+//    preco: '9.90',
 //    image: `${}`,
 //    tipo: '',
 //    titulo: '',
@@ -81,7 +81,7 @@ export const CardsInfo:CardsSection[] = [
 //  },
 //  {
 //    id: 8,
-//    preco: 9.90,
+//    preco: '9.90',
 //    image: `${}`,
 //    tipo: '',
 //    titulo: '',

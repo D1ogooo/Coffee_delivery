@@ -14,8 +14,13 @@ function Home(){
  
  const decrement = (product_id: number) => {
   const newPrice = [...quantities]
-  newPrice[product_id] -= 1
-  setQuantities(newPrice)
+  
+  if(newPrice[product_id] === 0) {
+     null
+    }else {
+     newPrice[product_id] -= 1
+     setQuantities(newPrice)
+    }
  }
  
  const increment = (product_id: number) => {

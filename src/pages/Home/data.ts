@@ -23,7 +23,7 @@ interface CardsSection {
   
 export const CardsInfo:CardsSection[] = [
  {
-   id: 1,
+   id: 0,
    preco: '9.90',
    image: `${ExpressImage}`,
    tipo: 'Tradicional',
@@ -31,7 +31,7 @@ export const CardsInfo:CardsSection[] = [
    explicacao: 'O tradicional café feito com água quente e grãos moídos',
  },
  {
-   id: 2,
+   id: 1,
    preco: '9.90',
    image: `${AmericanoImage}`,
    tipo: 'Tradicional',
@@ -39,7 +39,7 @@ export const CardsInfo:CardsSection[] = [
    explicacao: 'Expresso diluído, menos intenso que o tradicional',
  },
  {
-   id: 3,
+   id: 2,
    preco: '9.90',
    image: `${CremosoImage}`,
    tipo: 'Tradicional',
@@ -47,7 +47,7 @@ export const CardsInfo:CardsSection[] = [
    explicacao: 'Café expresso tradicional com espuma cremosa',
  },
  {
-   id: 4,
+   id: 3,
    preco: '9.90',
    image: `${GeladoImage}`,
    tipo: 'Trandicional',
@@ -56,7 +56,7 @@ export const CardsInfo:CardsSection[] = [
    explicacao: 'Bebida preparada com café expresso e cubos de gelo',
  },
  {
-   id: 5,
+   id: 4,
    preco: '9.90',
    image: `${CafeComleiteImage}`,
    tipo: 'Tradicional',
@@ -64,28 +64,4 @@ export const CardsInfo:CardsSection[] = [
    titulo: 'Café com Leite',
    explicacao: 'Meio a meio de expresso tradicional com leite vaporizado',
  },
-//  {
-//    id: 6,
-//    preco: '9.90',
-//    image: `${}`,
-//    tipo: '',
-//    titulo: '',
-//    explicacao: '',
-//  },
-//  {
-//    id: 7,
-//    preco: '9.90',
-//    image: `${}`,
-//    tipo: '',
-//    titulo: '',
-//    explicacao: '',
-//  },
-//  {
-//    id: 8,
-//    preco: '9.90',
-//    image: `${}`,
-//    tipo: '',
-//    titulo: '',
-//    explicacao: '',
-//  },
 ]

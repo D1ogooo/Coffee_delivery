@@ -1,6 +1,7 @@
 export const Theme = {
  colors: {
   yellow_dark: '#C47F17',
+  base_background: '#FAFAFA',
   brand_yellow_light: '#F1E9C9',
   brand_yellow: '#DBAC2C',
   brand_purple: '#8047F8',
@@ -13,5 +14,6 @@ export const Theme = {
   base_button: '#E6E5E5',
   base_white: '#FFF',
   base_card: '#F3F2F2',
+  base_input: '#EDEDED'
  }
 }

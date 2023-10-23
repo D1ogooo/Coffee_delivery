@@ -7,4 +7,8 @@ export const GlobalStyle = createGlobalStyle`
   outline: none;
   box-sizing: border-box;
  }
+
+ body {
+  background-color: ${({ theme }) => theme.colors.base_background};
+ }
 `

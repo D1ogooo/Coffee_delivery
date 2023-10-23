@@ -17,9 +17,9 @@ function Home(){
  if(newPrice[product_id] === 0) {
    null
   }else {
-    newPrice[product_id] -= 1
-    setQuantities(newPrice)
-   }
+   newPrice[product_id] -= 1
+   setQuantities(newPrice)
+  }
  }
  
  const increment = (product_id: number) => {

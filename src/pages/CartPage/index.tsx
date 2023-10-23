@@ -1,3 +1,6 @@
+import { useState } from "react"
+import { useForm } from "react-hook-form"
+import { z } from 'zod'
 import { SelectCofee } from "../../components/SelectCofee"
 import { NewContainer } from "./style" //Foi importado da pagina home
 import { Title, Formulario, InforForm, InternalInfo, Form, InfoPaiSecundari } from './style'
@@ -13,6 +16,17 @@ import Cifrao from '../../assets/icone de sifrão roxo.svg'
 
 
 function Cart() {
+  const createUserFormSchema = z.object({
+   
+  })
+
+  const [ output, setOutput] = useState('')
+  const { register, handleSubmit } = useForm()
+
+  function createUser(data: any) {
+   setOutput
+  }
+  
   return (
    <>
     <NewContainer>
@@ -28,17 +42,59 @@ function Cart() {
        </InternalInfo>
        </InfoPaiSecundari>
 
-       <Form>
-        <Cep><input type="text" placeholder="CEP" /></Cep>
-        <Rua><input type="text" placeholder="Rua" /></Rua>
+       <Form onSubmit={handleSubmit(createUser)}>
+        <Cep>
+         <input 
+         type="text"
+         placeholder='CEP'
+         {...register('CEP')}
+         />
+        </Cep>
+        <Rua>
+        <input
+         type="text"
+         placeholder='Rua'
+         {...register('Rua')}
+         />
+        </Rua>
         <NumeroEcomplemento>
-         <Numero><input type="text" placeholder="Número" /></Numero>
-         <Complemento><input type="text" placeholder="Complemento" /></Complemento>
+        <Numero>
+        <input
+         type="number"
+         placeholder="Número"
+         {...register('Número')}
+         />
+         </Numero>
+          <Complemento>
+          <input
+          type="text"
+          placeholder="Complemento"
+          {...register('Complemento')}
+          />
+          </Complemento>
         </NumeroEcomplemento>
         <FinalInfo>
-         <Bairro><input type="text" placeholder="Bairro" /></Bairro>
-         <Cidade><input type="text" placeholder="Cidade" /></Cidade>
-         <UF><input type="text" placeholder="UF" /></UF>
+         <Bairro>
+          <input
+          type="text"
+          placeholder="Bairro"
+          {...register('Bairro')}
+          />
+          </Bairro>
+         <Cidade>
+          <input
+          type="text"
+          placeholder="Cidade"
+          {...register('Cidade')}
+          />
+          </Cidade>
+         <UF>
+          <input
+          type="text"
+          placeholder="UF"
+          {...register('UF')}
+          />
+          </UF>
         </FinalInfo>
        </Form>
       </InforForm>

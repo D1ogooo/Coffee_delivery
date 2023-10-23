@@ -13,7 +13,6 @@ function Home(){
  
  const decrement = (product_id: number) => {
   const newPrice = [...quantities]
-   console.log(product_id)
 
  if(newPrice[product_id] === 0) {
    null
@@ -47,8 +46,6 @@ function Home(){
          <span>R$ <Third>{card.preco}</Third></span>
          </Valor>
          <Quantiti>
-         {console.log(card.id)}
-         {console.log(quantities[card.id])}
           <button id='decrement' onClick={() => decrement(card.id)}><img src={DecrementImage} alt="Decrementar"/></button>
           <p>{quantities[card.id]}</p>
           <button id='increment' onClick={() => increment(card.id)}><img src={AdicionarImage} alt="Incrementar"/></button>

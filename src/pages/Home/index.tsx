@@ -9,7 +9,7 @@ import DecrementImage from '../../assets/decrementar.svg'
 import AdicionarImage from '../../assets/adicionar.svg'
 
 function Home(){
- const [quantities, setQuantities] = useState(CardsInfo.map(() => 0));
+ const [quantities, setQuantities] = useState<number[]>(CardsInfo.map(() => 0));
  
  const decrement = (product_id: number) => {
   const newPrice = [...quantities]

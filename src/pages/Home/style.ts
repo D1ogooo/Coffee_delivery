@@ -7,7 +7,7 @@ export const Container = styled.div`
 `
 
 export const Coffee = styled.div`
- margin-top: 151.5px;
+ margin-top: 9.4688rem;
 `
 
 export const TitleCoffee = styled.h1`
@@ -17,7 +17,7 @@ export const TitleCoffee = styled.h1`
  font-style: normal;
  font-weight: 800;
  line-height: 130%;
- margin-bottom: 54px;
+ margin-bottom: 3.375rem;
 `
 
 export const TitleCard = styled.h1`
@@ -25,19 +25,19 @@ export const TitleCard = styled.h1`
  text-align: center;
  margin-bottom: 0.5rem;
  font-family: 'Baloo 2';
- font-size: 20px;
+ font-size: 1.25rem;
  font-style: normal;
  font-weight: 800;
  line-height: 130%;
 `
 
 export const Paragraph = styled.p`
- width: 216px;
+ width: 13.5rem;
  color: ${({ theme }) => theme.colors.base_label};
  text-align: center;
  font-family: 'Roboto';
  margin: 0 auto; 
- font-size: 14px;
+ font-size: 0.875rem;
  font-style: normal;
  font-weight: 400;
  line-height: 130%;
@@ -54,20 +54,20 @@ export const Cards = styled.div`
 
 export const Valor = styled.p`
  display: flex;
- margin-top: 36.5px;
+ margin-top: 2.2813rem;
  color: ${(props) => props.theme.base_text};
  font-family: 'Baloo 2';
- font-size: 24px;
+ font-size: 1.5rem;
  font-style: normal;
  font-weight: 800;
  line-height: 130%;
- margin-right: 24px;
+ margin-right: 1.5rem;
 
  span {
   color: ${({ theme }) => theme.colors.base_text};
   text-align: right;
   font-family: 'Roboto';
-  font-size: 14px;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
   line-height: 130%;

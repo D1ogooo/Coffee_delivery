@@ -1,19 +1,15 @@
 import { Container, NewQuantiti, Card } from './style'
-import DecrementImage from '../../assets/decrementar.svg'
-import Increment from '../../assets/adicionar.svg'
+import { TitleCard, RemoveItem } from './style'
 import { NewContador, NewValor } from './style'
 import { Third } from '../Main/style'
-import LixeiraImage from '../../assets/icone de lixeira.svg'
 import PrimeiroCaffe from '../../assets/Expresso Tradicional.svg'
-import { TitleCard, RemoveItem } from './style'
-import { CardsInfo } from '../../pages/Home/data'
-
-// Apenas um exemplo de como irá ficar com o sistema implementado
+import Increment from '../../assets/adicionar.svg'
+import DecrementImage from '../../assets/decrementar.svg'
+import LixeiraImage from '../../assets/icone de lixeira.svg'
 
 export function SelectCofee() {
   return(
   <>
-  {/* {CardsInfo.map((item) => ())} */}
   <Container>
    <Card>
    <img id="PrimeiroCaffee" src={PrimeiroCaffe}/>

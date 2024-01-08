@@ -13,12 +13,11 @@ function Home(){
  
  const decrement = (product_id: number) => {
   const newPrice = [...quantities]
-
  if(newPrice[product_id] === 0) {
-   null
-  }else {
-   newPrice[product_id] -= 1
-   setQuantities(newPrice)
+  null
+ }else {
+  newPrice[product_id] -= 1
+  setQuantities(newPrice)
   }
  }
  
@@ -54,8 +53,7 @@ function Home(){
          <img src={CartImage} alt="Adicionar ao carrinho"/>
         </AddCard>
        </Contador>
-      </Card>
-     ))}
+      </Card>))}
     </Cards>
     </Coffee>
    </Container>

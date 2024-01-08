@@ -30,8 +30,8 @@ function Cart() {
   return (
    <>
     <NewContainer>
-     <Title>Complete seu pedido</Title>
      <Pai>
+     <Title>Complete seu pedido</Title>
      <Formulario>
       <InforForm>
        <InfoPaiSecundari>
@@ -116,11 +116,11 @@ function Cart() {
      </Card>
     </Pagamento>
 
-    {/* <Second>
+    </Pai>
+    <Second>
      <TitleListCofee>Cafés selecionados</TitleListCofee>
      <SelectCofee/>
-    </Second> */}
-    </Pai>
+    </Second> 
    </NewContainer>
   </>
  )
